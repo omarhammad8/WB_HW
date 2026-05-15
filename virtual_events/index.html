@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>دليل فعاليات الجامعة الافتراضية</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">دليل الفعاليات</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a></li>
+          <li class="nav-item"><a class="nav-link" href="events.html">كل الفعاليات</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">عن الدليل</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بنا</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Spacer for fixed navbar -->
+  <div style="height: 56px;"></div>
+
+  <!-- Carousel -->
+  <div id="mainCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://picsum.photos/seed/slider1/1200/400" class="d-block w-100" alt="فعالية 1">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>أبرز فعاليات هذا الأسبوع</h5>
+          <p>اكتشف مجموعة من الفعاليات الثقافية والرياضية والموسيقية المميزة.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/seed/slider2/1200/400" class="d-block w-100" alt="فعالية 2">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>فعاليات موسيقية شيقة</h5>
+          <p>حفلات وعروض موسيقية متنوعة لجميع الأذواق.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/seed/slider3/1200/400" class="d-block w-100" alt="فعالية 3">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>أنشطة عائلية ممتعة</h5>
+          <p>استمتع بفعاليات مخصصة للعائلة والأطفال.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">السابق</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">التالي</span>
+    </button>
+  </div>
+
+  <!-- Categories Section -->
+  <section class="container mb-5">
+    <h2 class="mb-3">التصنيفات السريعة</h2>
+    <div class="d-flex flex-wrap">
+      <a href="events.html?category=ثقافة" class="btn btn-outline-primary category-btn me-2">ثقافة</a>
+      <a href="events.html?category=رياضة" class="btn btn-outline-primary category-btn me-2">رياضة</a>
+      <a href="events.html?category=موسيقى" class="btn btn-outline-primary category-btn me-2">موسيقى</a>
+      <a href="events.html?category=عائلي" class="btn btn-outline-primary category-btn me-2">عائلي</a>
+    </div>
+  </section>
+
+  <!-- Latest Events Section -->
+  <section class="container mb-5">
+    <h2 class="mb-3">أحدث الفعاليات</h2>
+    <div class="row" id="latestEvents">
+      <!-- Event cards will be injected here by script.js -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <h5>عن الدليل</h5>
+          <p>منصة إلكترونية تهدف إلى عرض فعاليات الجامعة الافتراضية لجميع أفراد المجتمع وتشجيع المشاركة.</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>روابط سريعة</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="events.html">كل الفعاليات</a></li>
+            <li><a href="about.html">عن الدليل</a></li>
+            <li><a href="contact.html">اتصل بنا</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>تواصل معنا</h5>
+          <p><i class="fa-solid fa-envelope me-2"></i>info@svuonline.org</p>
+          <p><i class="fa-solid fa-phone me-2"></i>+963 11 1234567</p>
+          <div>
+            <a href="#" class="me-3"><i class="fa-brands fa-facebook fa-lg"></i></a>
+            <a href="#" class="me-3"><i class="fa-brands fa-twitter fa-lg"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <small>© 2026 دليل فعاليات الجامعة الافتراضية. جميع الحقوق محفوظة.</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS bundle (includes Popper) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+  <!-- Main JS -->
+  <script src="script.js"></script>
+</body>
+</html>
