@@ -1,0 +1,84 @@
+/* Global Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap');
+
+/* Root variables for easy colour management */
+:root {
+  --primary-color: #ff5722;
+  --secondary-color: #ff9800;
+  --neutral-bg: #f7f7f7;
+  --dark-color: #212529;
+  --light-color: #ffffff;
+  /* Override Bootstrap primary colour */
+  --bs-primary: var(--primary-color);
+  --bs-secondary: var(--secondary-color);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+  background-color: var(--neutral-bg);
+  direction: rtl;
+  text-align: right;
+}
+
+/* Navbar customisation */
+.navbar {
+  margin-bottom: 1rem;
+}
+
+/* Carousel captions on dark overlay */
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+/* Event cards */
+.event-card {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.event-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Footer styling */
+footer {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+footer a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--primary-color);
+}
+
+/* Category buttons */
+.category-btn {
+  min-width: 90px;
+  margin-bottom: 0.5rem;
+}
+
+/* Contact form */
+.contact-form input,
+.contact-form textarea {
+  text-align: right;
+}
+
+.alert-custom {
+  display: none;
+}
+
+/* Team section */
+.team-member img {
+  border-radius: 50%;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>اتصل بنا - دليل الجامعة الافتراضية</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">دليل الفعاليات</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+          <li class="nav-item"><a class="nav-link" href="events.html">كل الفعاليات</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">عن الدليل</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">اتصل بنا</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div style="height: 56px;"></div>
+
+  <div class="container mb-5">
+    <h2 class="my-4">اتصل بنا</h2>
+    <p>نرحب بتواصلكم معنا لأي استفسار أو اقتراح حول الدليل أو لإضافة فعاليات جديدة.</p>
+    <div class="row">
+      <div class="col-lg-6 mb-4">
+        <form id="contactForm" class="contact-form">
+          <div class="mb-3">
+            <label for="inputName" class="form-label">الاسم</label>
+            <input type="text" class="form-control" id="inputName" placeholder="أدخل اسمك" required>
+          </div>
+          <div class="mb-3">
+            <label for="inputEmail" class="form-label">البريد الإلكتروني</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="أدخل بريدك الإلكتروني" required>
+          </div>
+          <div class="mb-3">
+            <label for="inputMessage" class="form-label">الرسالة</label>
+            <textarea class="form-control" id="inputMessage" rows="5" placeholder="اكتب رسالتك هنا" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">إرسال</button>
+        </form>
+        <div id="contactSuccess" class="alert alert-success alert-custom mt-3" role="alert">
+          تم إرسال رسالتك بنجاح! سنرد عليك قريبًا.
+        </div>
+        <div id="contactError" class="alert alert-danger alert-custom mt-3" role="alert"></div>
+      </div>
+      <div class="col-lg-6 mb-4">
+        <h4>معلومات التواصل</h4>
+        <p><i class="fa-solid fa-envelope me-2"></i>info@svuonline.org</p>
+        <p><i class="fa-solid fa-phone me-2"></i>+963 11 1234567</p>
+        <p><i class="fa-solid fa-location-dot me-2"></i>سوريا، دمشق</p>
+        <h4 class="mt-4">تابعونا على وسائل التواصل الاجتماعي</h4>
+        <div>
+          <a href="#" class="me-3"><i class="fa-brands fa-facebook fa-2x"></i></a>
+          <a href="#" class="me-3"><i class="fa-brands fa-twitter fa-2x"></i></a>
+          <a href="#" class="me-3"><i class="fa-brands fa-instagram fa-2x"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="py-4 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <h5>عن الدليل</h5>
+          <p>منصة إلكترونية تهدف إلى عرض فعاليات الجامعة الافتراضية لجميع أفراد المجتمع وتشجيع المشاركة.</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>روابط سريعة</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="events.html">كل الفعاليات</a></li>
+            <li><a href="about.html">عن الدليل</a></li>
+            <li><a href="contact.html">اتصل بنا</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>تواصل معنا</h5>
+          <p><i class="fa-solid fa-envelope me-2"></i>info@svuonline.org</p>
+          <p><i class="fa-solid fa-phone me-2"></i>+963 11 1234567</p>
+          <div>
+            <a href="#" class="me-3"><i class="fa-brands fa-facebook fa-lg"></i></a>
+            <a href="#" class="me-3"><i class="fa-brands fa-twitter fa-lg"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <small>© 2026 دليل فعاليات الجامعة الافتراضية. جميع الحقوق محفوظة.</small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
